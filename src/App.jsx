@@ -1,15 +1,15 @@
-import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <h1>Home page</h1>
       <Routes>
-        <Route path='' ></Route>
+        <Route path=""></Route>
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
