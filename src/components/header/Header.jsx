@@ -9,9 +9,6 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState(false);
 
-  // function closeMenu() {
-  //     setIsOpen(false)
-  // }
   return (
     <header
       className={s.header}
@@ -26,8 +23,15 @@ export function Header() {
           onColor="#005555"
         />
 
-        <nav className={`${s.nav} ${isOpen ? s.activeBtn : ""}`} style={{ backgroundColor: value ? "#808080" : "#f5f5f5" }}>
-          <ul onClick={() => setIsOpen(false)} className={s.list} style={{color: value ? 'white' : 'black'}}>
+        <nav
+          className={`${s.nav} ${isOpen ? s.activeBtn : ""}`}
+          style={{ backgroundColor: value ? "#808080" : "#f5f5f5" }}
+        >
+          <ul
+            onClick={() => setIsOpen(false)}
+            className={s.list}
+            style={{ color: value ? "white" : "black" }}
+          >
             <li className={s.link}>
               <NavLink
                 className={({ isActive }) => (isActive ? s.active : "")}
@@ -71,12 +75,10 @@ export function Header() {
           </ul>
         </nav>
 
-        <div onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu} >
+        <div onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu}>
           {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
         </div>
       </div>
-
-      {/* <button className={s.burgerMenu} onClick={() => setIsOpen(!isOpen)}>click</button> */}
     </header>
   );
 }
