@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+.input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #696969;
+}
+
+.icon {
+  position: absolute;
+  top: 3px;
+  right: 26%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+}

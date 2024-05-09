@@ -15,7 +15,7 @@ module.exports = {
     "no-console": "warn",
     "import/prefer-default-export": "off",
     "react/jsx-no-useless-fragment": "warn",
-    "no-unused-expressions":"error",
+    "no-unused-expressions": "error"
     // "react/jsx-no-target-blank": "off",
     // "react-refresh/only-export-components": [
     //   "warn",
