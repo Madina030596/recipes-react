@@ -1,10 +1,9 @@
-import s from "./Main.module.css"
+import s from "./Main.module.css";
 
 export function Main() {
-    return (
-      <div>
-        <h2 className={s.margin}>Main</h2>
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <h2 className={s.margin}>Main</h2>
+    </div>
+  );
+}
