@@ -1,4 +1,4 @@
-import s from "./Favorites.module.css"
+import s from "./Favorites.module.css";
 
 export function Favorites() {
   return (

@@ -75,9 +75,9 @@ export function Header() {
           </ul>
         </nav>
 
-        <div onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu}>
+        <button onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu}>
           {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-        </div>
+        </button>
       </div>
     </header>
   );

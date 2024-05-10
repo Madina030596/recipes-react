@@ -7,7 +7,6 @@ import { Favorites } from "./pages/favorites/Favorites";
 import { SignIn } from "./pages/signIn/SignIn";
 import { SignUp } from "./pages/signUp/SignUp";
 import { Input } from "./components/input/Input";
-// import {Cards} from "./components/cards/Cards";
 
 function App() {
   return (
