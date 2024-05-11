@@ -9,9 +9,6 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState(false);
 
-  // function closeMenu() {
-  //     setIsOpen(false)
-  // }
   return (
     <header
       className={s.header}
@@ -78,9 +75,9 @@ export function Header() {
           </ul>
         </nav>
 
-        <div onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu}>
+        <button onClick={() => setIsOpen(!isOpen)} className={s.burgerMenu}>
           {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-        </div>
+        </button>
       </div>
     </header>
   );
