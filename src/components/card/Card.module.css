@@ -44,12 +44,21 @@
   bottom: 30px;
 }
 
-.fav {
+.addToFav {
   position: absolute;
   right: 30px;
   bottom: 30px;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
+}
+
+.addedToFav {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 30px;
+  color: red;
   cursor: pointer;
 }
 

@@ -1,8 +1,17 @@
+// import { useDispatch, useSelector } from "react-redux";
 import s from "./Card.module.css";
 import { CiHeart } from "react-icons/ci";
-// import { FaHeart } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa6";
+import { useActions } from "../../hooks/useActions";
+import { useFavorites } from "../../hooks/useFavorites";
 
 export function Card({ cards }) {
+  const { favorites } = useFavorites();
+
+  const { toggleFavorites } = useActions();
+
+  console.log(favorites);
+
   return (
     <main className={s.container}>
       {cards.map(item => {
@@ -16,8 +25,13 @@ export function Card({ cards }) {
             <p className={`${s.text} ${s.cuisineText}`}>
               Cuisine: {item.cuisine}
             </p>
-            <button>
-              <CiHeart className={s.fav} />
+            {/* <button onClick={() => dispatch(actions.toggleFavorites(item))}> */}
+            <button onClick={() => toggleFavorites(item)}>
+              {favorites.some(r => r.id === item.id) ? (
+                <FaHeart className={s.addedToFav} />
+              ) : (
+                <CiHeart className={s.addToFav} />
+              )}
             </button>
           </div>
         );
