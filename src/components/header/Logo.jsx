@@ -1,4 +1,4 @@
-import logo from "../../../public/svg/logo.svg";
+import logo from "/svg/logo.svg";
 import s from "./Logo.module.css";
 import { Link } from "react-router-dom";
 

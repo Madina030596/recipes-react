@@ -10,7 +10,8 @@ export function Card({ cards }) {
 
   const { toggleFavorites } = useActions();
 
-  console.log(favorites);
+  // console.log(favorites);
+  console.log(cards);
 
   return (
     <main className={s.container}>
