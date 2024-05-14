@@ -21,3 +21,8 @@
   cursor: pointer;
   font-size: 30px;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}
