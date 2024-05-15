@@ -27,6 +27,7 @@
   width: 400px;
   height: 400px;
   filter: brightness(50%);
+  border-radius: 10px;
 }
 
 .text {
@@ -44,12 +45,21 @@
   bottom: 30px;
 }
 
-.fav {
+.addToFav {
   position: absolute;
   right: 30px;
   bottom: 30px;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
+}
+
+.addedToFav {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 30px;
+  color: red;
   cursor: pointer;
 }
 

@@ -7,6 +7,7 @@ import { Favorites } from "./pages/favorites/Favorites";
 import { SignIn } from "./pages/signIn/SignIn";
 import { SignUp } from "./pages/signUp/SignUp";
 import { Input } from "./components/input/Input";
+import { SearchPage } from "./components/searchPage/SearchPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/favorites" element={<Favorites />}></Route>
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/search" element={<SearchPage />} />
       </Routes>
     </div>
   );
