@@ -16,7 +16,7 @@ export const api = createApi({
     }),
 
     getSearchedRecipes: builder.query({
-      query: debouncedSearch => `/search?q=${debouncedSearch}`,
+      query: value => `/search?q=${value}`,
       transformResponse: response => response.recipes
     })
   })

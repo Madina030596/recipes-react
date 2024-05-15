@@ -38,11 +38,6 @@ export function Input() {
         type="search"
         placeholder="search recipe"
         value={value}
-        // onKeyDown={e => {
-        //   if (e.key === "Enter") {
-        //     moveToPage();
-        //   }
-        // }}
       />
       <button type="submit" onClick={handleSearch}>
         <CiSearch className={s.icon} />
