@@ -8,6 +8,7 @@ import { SignIn } from "./pages/signIn/SignIn";
 import { SignUp } from "./pages/signUp/SignUp";
 import { Input } from "./components/input/Input";
 import { SearchPage } from "./components/searchPage/SearchPage";
+import { DescriptionCard } from "./components/descriptionCard/DescriptionCard";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/signin" element={<SignIn />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/description/:id" element={<DescriptionCard />} />
       </Routes>
     </div>
   );

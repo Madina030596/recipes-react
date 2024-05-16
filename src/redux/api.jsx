@@ -18,8 +18,16 @@ export const api = createApi({
     getSearchedRecipes: builder.query({
       query: value => `/search?q=${value}`,
       transformResponse: response => response.recipes
+    }),
+
+    getRecipeDescription: builder.query({
+      query: id => `/${id}`
     })
   })
 });
 
-export const { useGetRecipesQuery, useGetSearchedRecipesQuery } = api;
+export const {
+  useGetRecipesQuery,
+  useGetSearchedRecipesQuery,
+  useGetRecipeDescriptionQuery
+} = api;
