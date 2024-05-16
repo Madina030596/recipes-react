@@ -4,9 +4,12 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
   background-color: #f5f5f5;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
 }
 
 .container {
@@ -24,6 +27,7 @@
 .link {
   font-size: 1rem;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .link:nth-child(n + 2) {
